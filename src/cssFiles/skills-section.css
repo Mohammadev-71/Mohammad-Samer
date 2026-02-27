@@ -1,0 +1,216 @@
+#skills-section{
+   width: 100vw;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   min-height: 50vh;
+   text-align: center;
+   gap: 30px;
+   padding-top: 100px;
+   margin: 40px 0;
+}
+
+.card-container{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+}
+
+.skill-card{
+   width: 300px;
+
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+   background-color: rgb(242, 247, 252);
+   color: rgb(29, 99, 179);
+   position: relative;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.skill-card:hover{
+   transform: scale(1.05);
+   box-shadow: 1px 3px 9px rgba(0,0,0,0.7);
+   border: 1.5px solid rgb(29, 99, 179);
+}
+
+.section-title{
+   display: flex;
+   width: 75%;
+   margin-bottom: 30px;
+}
+
+
+.skill-card .title{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+   font-size: 25px;
+   font-weight: 600;
+   margin:20px 0;
+}
+
+.skill-icon{
+   display: block;
+   font-size: 50px;
+}
+
+#react{
+   animation: react-animation 5s linear infinite ;
+}
+
+#mongodb{
+   animation: mongodb-animation 2s linear infinite ;
+}
+
+#node{
+   animation: node-animation 1s linear infinite ;
+}
+
+#github{
+   animation: github-animation 0.3s ease-in-out infinite;
+}
+
+#responsive{
+   animation: responsive-animation 1.5s linear infinite;
+}
+
+@keyframes react-animation {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+
+@keyframes mongodb-animation {
+   0%{
+      transform: translateY(-10px);
+   }
+   50%{
+      transform: translateY(5px);
+   }
+   100%{
+      transform: translateY(-10px);
+   }
+}
+
+@keyframes github-animation {
+   0% { transform: translate(0, 0); }
+   25% { transform: translate(-2px, 2px); }
+   50% { transform: translate(2px, -2px); }
+   75% { transform: translate(-2px, -2px); }
+   100% { transform: translate(0, 0); }
+
+}
+
+@keyframes responsive-animation {
+   from{
+      transform: rotateY(0deg);
+   }
+   to{
+      transform: rotateY(180deg);
+   }
+
+}
+
+
+
+
+@keyframes node-animation {
+   from {
+      transform: scale(1.05);
+   }
+   to {
+      transform: scale(0.7);
+   }
+}
+
+
+.frontend-card::before{
+   content: "Frontend";
+   min-width: 70px;
+   background-color: #F58840;
+   padding: 8px 10px;
+   border-radius: 15px;
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 20px;
+   color: white;
+}
+
+
+.backend-card::before{
+   content: "Backend";
+   min-width: 70px;
+   background-color: #68A063;
+   padding: 8px 10px;
+   border-radius: 15px;
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 20px;
+   color: white;
+}
+
+.database-card::before{
+   content: "Database";
+   min-width: 70px;
+   background-color: #4F46E5;
+   padding: 8px 10px;
+   border-radius: 15px;
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 20px;
+   color: white;
+}
+
+.tools-card::before{
+   content: "Tools";
+   background-color: #3D99F5;
+   padding: 8px 10px;
+   min-width: 70px;
+   border-radius: 15px;
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 20px;
+   color: white;
+}
+
+.skill-card p{
+   font-size: 20px;
+}
+
+
+@media (min-width:1000px) {
+   #skills-section{
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .card-container{
+      width: 70%;
+   }
+
+   .section-title{
+      padding-left: 0%;
+   }
+}
+

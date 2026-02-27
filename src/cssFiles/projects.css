@@ -1,0 +1,99 @@
+#Project-Section{
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   min-height: 65vh;
+   text-align: start;
+   gap: 20px;
+   padding: 100px 0 50px 0;
+   margin-top: 60px;
+   background-color: rgb(242, 247, 252);
+}
+
+
+.section-title{
+   display: flex;
+   width: 75%;
+   margin-bottom: 30px;
+}
+.cards-container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.project-card{
+   min-width: 290px;
+   max-width: 450px;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+   background-color: white;
+   color: rgb(29, 99, 179);
+   position: relative;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   margin: 0 20px;
+}
+
+
+.project-card:hover{
+   transform: scale(1.05);
+   box-shadow: 1px 3px 9px rgba(0,0,0,0.7);
+   border: 1.5px solid rgb(29, 99, 179);
+}
+
+.title{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 500;
+   margin: 10px 0;
+}
+
+
+
+.project-card::after{
+   content: "2026";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   background-color: #45cea5;
+   top:-15px;
+   right: 5px;
+   padding: 5px 15px ;
+   font-size: 20px;
+   border-radius: 25px;
+}
+
+
+.description{
+   font-size: 20px;
+}
+
+.technologies{
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+   padding-top: 20px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 30px;
+}
+
+
+.technology{
+   background-color: rgb(242, 247, 252);
+   padding: 10px;
+   border-radius: 15px;
+   text-align: center;
+   box-shadow: 1px 2px 8px rgba(0,0,0,0.5);
+}
