@@ -10,7 +10,7 @@ export default function HeroSection(){
          <div className="hero-section-info">
             <h2>I'm Mohammad Samer</h2>
             <h3>Full-Stack Web Developer</h3>
-            <p>I'm a Junior Full-Stack Web Developer passionate about building modern web applications.</p>
+            <p>I am a full-stack web developer passionate about building modern web applications.</p>
             <div className="hero-section-buttons">
                <a href="https://www.linkedin.com/in/mohammad-samer-a830993b4/" target="_blank" rel="noreferrer"><FaLinkedin className="contact-icons"/>Linkedin</a>
                <a href="https://github.com/Mohammadev-71/" target="_blank" rel="noreferrer" ><FaGithub className="contact-icons"/>GitHub</a>
