@@ -22,6 +22,8 @@ export default function Projects(){
    return (
       <section ref={sectionRef} style={{opacity:isVisible?1:0, transition:"all 1s ease"}} id="Project-Section">
          <h2 className="section-title">My Projects</h2>
+
+
          <div className="cards-container">
             <div className="project-card">
                <div className="title">
@@ -35,8 +37,14 @@ export default function Projects(){
                   <li className="technology">Express.js</li>
                   <li className="technology">Mongodb</li>
                </ul>
+               <a href="https://drive.google.com/file/d/1iI_9WWcCkxZdwQ11vQFjtJ55AYFAMcgX/view?usp=drive_link" className="demo-btn">
+                  <span>📺 Watch Project Demo</span>
+               </a>  
             </div>
          </div>
+
+
+
       </section>
    )
 }

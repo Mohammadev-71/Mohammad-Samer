@@ -30,6 +30,7 @@
 .project-card{
    min-width: 290px;
    max-width: 450px;
+   min-height: 420px;
    padding: 20px;
    border-radius: 20px;
    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
@@ -50,7 +51,7 @@
 
 .title{
    display: flex;
-   width: 100%;
+   min-width: 100%;
    justify-content: center;
    align-items: center;
    font-size: 25px;
@@ -80,13 +81,16 @@
 
 .technologies{
    display: flex;
+   flex-direction: row;
    width: 100%;
    flex-wrap: wrap;
    padding-top: 20px;
    justify-content: center;
    align-items: center;
    text-align: center;
-   gap: 30px;
+   gap: 40px;
+   margin: 10px;
+   margin-bottom: 30px;
 }
 
 
@@ -96,4 +100,25 @@
    border-radius: 15px;
    text-align: center;
    box-shadow: 1px 2px 8px rgba(0,0,0,0.5);
+}
+
+.demo-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   background-color: rgb(26, 88, 158);
+   color: #ffffff;
+   font-weight: 500;
+   padding: 10px 16px;
+   border-radius: 8px;
+   text-decoration: none;
+   margin-top: 16px;
+   width: 100%;
+   box-sizing: border-box;
+   transition: background-color 0.2s ease;
+}
+
+.demo-btn:hover {
+   background-color: #1d4ed8;
 }
