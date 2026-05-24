@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMobile } from "react-icons/ai";
 import { useRef,useEffect, useState } from "react";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function SkillsSection(){
    const sectionRef = useRef(null)
@@ -35,6 +36,15 @@ export default function SkillsSection(){
                </div>
                <p className="description">Building dynamic and interactive user interfaces with reusable components.</p>
             </div>
+
+            <div className="skill-card frontend-card">
+               <div className="title">
+                  <p className="skill-name">Tailwind CSS</p>
+                  <RiTailwindCssFill id="tailwind"/>
+               </div>
+               <p className="description">Efficiently creating responsive and complex UI designs with highly customizable utility classes.</p>
+            </div>
+
             <div className="skill-card backend-card">
                <div className="title">
                   <p className="skill-name">Node&Express</p>
@@ -56,6 +66,8 @@ export default function SkillsSection(){
                </div>
                <p className="description">Version control for tracking code changes and collaborating on projects.</p>
             </div>
+
+
             <div className="skill-card tools-card">
                <div className="title">
                   <p className="skill-name">Responsive</p>

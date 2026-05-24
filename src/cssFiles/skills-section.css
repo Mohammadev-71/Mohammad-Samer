@@ -67,6 +67,10 @@
    animation: react-animation 5s linear infinite ;
 }
 
+#tailwind{
+   animation: tailwind-animation 1s linear infinite ;
+}
+
 #mongodb{
    animation: mongodb-animation 2s linear infinite ;
 }
@@ -92,6 +96,15 @@
    }
 }
 
+
+@keyframes tailwind-animation {
+   0%, 100% {
+      transform: translateX(-5px) scale(1);
+   }
+   50% {
+      transform: translateX(5px) scale(1.05);
+   }
+}
 
 @keyframes mongodb-animation {
    0%{
