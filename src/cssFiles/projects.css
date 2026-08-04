@@ -1,129 +1,156 @@
 #Project-Section{
-   width: 100vw;
+   width: 100%;
    display: flex;
    flex-direction: column;
-   justify-content: start;
-   align-items: center;
-   min-height: 65vh;
-   text-align: start;
-   gap: 20px;
-   padding: 100px 0 50px 0;
-   margin-top: 60px;
-   background-color: rgb(242, 247, 252);
-}
-
-
-.section-title{
-   display: flex;
-   width: 75%;
-   margin-bottom: 30px;
-}
-.cards-container{
-   width: 100%;
-   height: 100%;
-   display: flex; 
-   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   gap:30px
+   min-height: 75vh;
+   text-align: center;
+   gap: 24px;
+   padding: 100px 20px 80px;
+   background-color: #eef6ff;
+}
+
+.section-title{
+   width: auto;
+   font-size: 2rem;
+   font-weight: 700;
+   color: rgb(29, 99, 179);
+   text-align: center;
+   position: relative;
+   margin-bottom: 50px;
+}
+
+.section-title::before{
+   content: "";
+   position: absolute;
+   right: 1px;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -10px;
+   width: 100%;
+   height: 4px;
+   border-radius: 999px;
+   background: linear-gradient(90deg, rgb(29, 99, 179), #45cea5);
+}
+
+.cards-container{
+   width: 100%;
+   max-width: 1180px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   gap: 26px;
+   align-items: stretch;
 }
 
 .project-card{
-   min-width: 290px;
-   max-width: 450px;
-   min-height: 420px;
-   padding: 20px;
-   border-radius: 20px;
-   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-   background-color: white;
-   color: rgb(29, 99, 179);
+   min-height: 430px;
+   padding: 30px;
+   border-radius: 28px;
+   box-shadow: 0 22px 45px rgba(15, 23, 42, 0.08);
+   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+   color: #0f172a;
    position: relative;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   margin: 0 20px;
+   overflow: hidden;
+   transition: transform 0.35s ease, box-shadow 0.35s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
+.project-card::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 8px;
+   background: linear-gradient(90deg, rgb(29, 99, 179), #45cea5);
+}
 
 .project-card:hover{
-   transform: scale(1.05);
-   box-shadow: 1px 3px 9px rgba(0,0,0,0.7);
-   border: 1.5px solid rgb(29, 99, 179);
+   transform: translateY(-10px);
+   box-shadow: 0 30px 80px rgba(15, 23, 42, 0.15);
 }
 
 .title{
    display: flex;
-   min-width: 100%;
    justify-content: center;
    align-items: center;
-   font-size: 25px;
-   font-weight: 500;
-   margin: 10px 0;
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: rgb(30, 64, 175);
+   margin-bottom: 18px;
 }
 
 .project-card::after{
-   content: "2026";
+   content: "Live";
    position: absolute;
-   width: 50px;
-   height: 20px;
-   background-color: #45cea5;
-   top:-15px;
-   right: 5px;
-   padding: 5px 15px ;
-   font-size: 20px;
-   border-radius: 25px;
+   top: 20px;
+   right: 20px;
+   background-color: #dbeafe;
+   color: #1d4ed8;
+   padding: 8px 14px;
+   font-size: 0.85rem;
+   font-weight: 700;
+   border-radius: 999px;
 }
 
-
 .description{
-   font-size: 20px;
+   font-size: 1rem;
+   color: #475569;
+   line-height: 1.75;
+   margin-bottom: 24px;
+   text-align: left;
 }
 
 .technologies{
    display: flex;
-   flex-direction: row;
-   width: 100%;
    flex-wrap: wrap;
-   padding-top: 20px;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   gap: 20px;
-   margin: 10px;
-   margin-bottom: 30px;
+   justify-content: flex-start;
+   gap: 12px;
+   margin-bottom: 26px;
 }
 
-
 .technology{
-   background-color: rgb(242, 247, 252);
-   padding: 10px;
-   border-radius: 15px;
-   text-align: center;
-   box-shadow: 1px 2px 8px rgba(0,0,0,0.5);
-   margin-left: 8px;
+   background-color: #eff6ff;
+   color: #1d4ed8;
+   padding: 10px 14px;
+   border-radius: 999px;
+   font-size: 0.95rem;
+   font-weight: 600;
 }
 
 .demo-btn {
-   display: flex;
+   display: inline-flex;
    align-items: center;
    justify-content: center;
-   gap: 8px;
-   background-color: rgb(26, 88, 158);
+   gap: 10px;
+   background-color: rgb(29, 99, 179);
    color: #ffffff;
-   font-weight: 500;
-   padding: 10px 16px;
-   border-radius: 8px;
+   font-weight: 600;
+   padding: 14px 20px;
+   border-radius: 18px;
    text-decoration: none;
-   margin-top: 16px;
-   width: 100%;
-   box-sizing: border-box;
-   transition: background-color 0.2s ease;
+   width: fit-content;
+   transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .demo-btn:hover {
-   background-color: #1d4ed8;
+   background-color: #2563eb;
+   transform: translateY(-2px);
 }
-@media (min-width: 1000px) {
-   .title {
-      min-width: 100% !important;
+
+@media (max-width: 640px) {
+   #Project-Section{
+      padding: 80px 16px 60px;
+   }
+
+   .project-card{
+      padding: 24px;
+   }
+
+   .section-title{
+      font-size: 2rem;
    }
 }

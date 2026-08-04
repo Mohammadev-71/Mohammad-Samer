@@ -10,21 +10,19 @@ import { FaArrowUpLong } from "react-icons/fa6";
 import { useEffect, useState } from 'react'
 function App() {
   const [isReached, setIsReached] = useState(false);
-  const scrollEffect = ()=>{
-    useEffect(() => {
+
+  useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setIsReached(true);
-      } else {
-        setIsReached(false);
-      }
+      setIsReached(window.scrollY > 500);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  }
-  scrollEffect()
+  
+
+
   return (
     <div className='my-app'>
       <Header/>
