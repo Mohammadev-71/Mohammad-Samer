@@ -20,11 +20,32 @@ export default function Projects(){
       return()=>observer.disconnect()
    },[])
    return (
-      <section ref={sectionRef} style={{opacity:isVisible?1:0, transition:"all 1s ease"}} id="Project-Section">
+      <section className="flex flex-row wrap" ref={sectionRef} style={{opacity:isVisible?1:0, transition:"all 1s ease"}} id="Project-Section">
          <h2 className="section-title">My Projects</h2>
 
 
          <div className="cards-container">
+            <div className="project-card">
+               <div className="title">
+                  <p>Badil-platform</p>
+               </div>
+               <div className="description">
+                  <p>"Badil" is an innovative digital bartering platform designed to modernize the traditional concept of exchange and promote sustainable consumption. The platform enables users to list, discover, and trade goods and services seamlessly, fostering a sharing economy and reducing waste.</p>
+               </div>
+               <ul className="technologies">
+                  <li className="technology">React.js</li>
+                  <li className="technology">Express.js</li>
+                  <li className="technology">Mongodb</li>
+                  <li className="technology">I18n</li>
+                  <li className="technology">Tailwind</li>
+               </ul>
+               <a target="_blank" href="https://badil.best" className="demo-btn">
+                  <span>Visit Side</span>
+               </a>  
+            </div>
+
+
+
             <div className="project-card">
                <div className="title">
                   <p>Invoice System</p>
@@ -42,6 +63,8 @@ export default function Projects(){
                </a>  
             </div>
          </div>
+
+         
 
 
 
